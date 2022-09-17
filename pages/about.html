@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://images.squarespace-cdn.com/content/v1/6014f6d17afdae55ced84a12/1612070516488-6EEOZLPWLFY3703BAA3O/favicon.ico?format=100w" />
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/about.css" />
+
+    <title>about &mdash; NestSpace 巢空間室內設計</title>
+    <script>
+        let isShow = false
+        function myFunction(x) {
+
+            x.classList.toggle("change");
+
+            if (isShow == false) {
+                isShow = true
+                document.querySelector(".Wrapper-mobile").style.display = "block"
+                document.querySelector(".Wrapper-mobile").style.opacity = 1
+                document.querySelector("header").style.backgroundColor = "#a8a6a1"
+                document.querySelector("header").style.border = "none"
+                document.querySelector("*").style.overflow = "hidden";
+                document.querySelector(".bar1").style.backgroundColor = "white"
+                document.querySelector(".bar3").style.backgroundColor = "white"
+
+
+            } else {
+                isShow = false
+                document.querySelector(".Wrapper-mobile").style.display = "none"
+                document.querySelector(".Wrapper-mobile").style.opacity = 0
+                document.querySelector("header").style.backgroundColor = "unset"
+                document.querySelector("header").style.borderBottom = "1px solid #000";
+                document.querySelector("*").style.overflow = "scroll";
+                document.querySelector(".bar1").style.backgroundColor = "#333"
+                document.querySelector(".bar3").style.backgroundColor = "#333"
+            }
+        }
+    
+    
+        window.addEventListener("scroll", () => {
+           
+            if (scrollY >= 100) {
+
+                document.querySelector(".header__about").style.backgroundColor = "#A8A6A1"
+              
+                 document.querySelector(".header__about").style.height= "90px"
+              
+            }
+            else {
+                document.querySelector(".header__about").style.backgroundColor = "unset"
+                document.querySelector(".header__about").style.height = "100px"
+
+            }
+        })
+
+      
+    </script>
+</head>
+
+<body>
+    <div class="Wrapper">
+        <div class="Wrapper-mobile">
+            <div class="Wrapper-mobile-header">
+
+            </div>
+            <div class="wrapper-box-menu">
+                <div class="Wrapper-mobile-menu">
+                    <ul>
+                        <li><a href="../pages/about.html">About</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./portfolio.html">Portfolio</a></li>
+                        <li><a href="./impression.html">Impression</a></li>
+                    </ul>
+                </div>
+                <div class="Wrapper-mobile-footer">
+                    <div class="Wrapper-mobile-footer-social">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <header class="header__about">
+            <div class="header">
+                <div class="header__navleft">
+                    <nav>
+                        <ul>
+                            <li>
+                                <div class="container" onclick="myFunction(this)">
+                                    <div class="bar1 bar"></div>
+                                    <div class="bar2 bar"></div>
+                                    <div class="bar3 bar"></div>
+                                </div>
+                            </li>
+                            <li><a href="../pages/about.html">About</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="./portfolio.html">Portfolio</a></li>
+                            <li><a href="./impression.html">Impression</a></li>
+
+                        </ul>
+                    </nav>
+                    <div class="header__navleft-logo ">
+
+                        <a href="./index.html" ><img src="../img/nestspace+logo+bk.png" alt="logo" /></a>
+
+                    </div>
+                </div>
+                <div class="header__navright">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                       
+
+
+                    </ul>
+                </div>
+
+
+
+            </div>
+        </header>
+        <section class="content-about">
+            <div class="section-background">
+                <img src="../img/Nestspace-aboutimg-07.jpg" alt="img-background">
+            </div>
+            <div class="section__info">
+                <div class="section__info-box">
+                    <div class="section__info-title">
+                        <p>About NestSpace</p>
+                        <div class="section__info-title-bar"></div>
+                    </div>
+                    <div class="section__info-content-english">
+                        <h4>
+                            NestSpace Design is a Taipei-based interior studio run by a design duo Jun-Cheng Yeh and
+                            Chun-Ting Yeh. With a
+                            perspective that no standard answer exists in the design realm, we embrace every diversity
+                            and always try to
+                            find a
+                            sustainable solution for the environment and clients. We love to hide metaphors in every
+                            work that makes us an
+                            architectural storyteller throughout each renovation journey, and the cycle keeps happening.
+                        </h4>
+                    </div>
+                </div>
+                <br>
+                <div class="section__info-box-china">
+                    <div class="section__info-box-china1">
+                        當代潮流變化之快速，人事物都不再有所謂的標準答案，空間亦然，每一件獨立的設計輪廓，皆不需要被風格定義給框住思維。身為設計者，我們思考著如何在多變的挑戰裡，構建合適的生活體驗，進而創造驚喜感受；而良好的空間格局動線與居住者的使用體驗，即是我們在設計中持續追求的目標。
+                    </div>
+                    <br>
+                    <div class="section__info-box-china2">
+                        巢空間室內設計的設計團隊，具備專業的室內設計與工程管理證照，輔以長期配合的優質工班，對施工品質與工地安全維護採取最高標準。如此一來，在不同的需求條件下，我們將能以開放的設計思維結合純熟的經驗，讓不同思路交織而成的共鳴，為每個房子創造獨一無二的樣貌。
+                    </div>
+                </div>
+               
+
+
+                <div class="section__info-box section__info-box-space">
+                    <div class="section__info-title">
+                        <p>Certified License</p>
+                        <div class="section__info-title-bar"></div>
+                    </div>
+                    <div class="section__info-content-english section__info-content-listchina">
+                        <ul>
+                            <li>建築物室內裝修業登記證／內營室業字第40E2008573號</li>
+                            <li>建築物室內裝修專業技術人員登記證／內營室技字第40EB019417號</li>
+                            <li>建築物室內設計專業技術人員登記證／內營室技字第40EA025330號</li>
+                            <li>建築物室內設計乙級技術士／證號125-003486</li>
+                            <li>建築物室內裝修工程管理乙級技術士／證號126-006569</li>
+                            <li>建築物室內裝修工程管理乙級技術士／證號126-008602</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="section__info-box ">
+                    <div class="section__info-title">
+                        <p>Working Process</p>
+                        <div class="section__info-title-bar"></div>
+                    </div>
+                    <div class="section__info-content-english section__info-content-stt">
+                        <div class=" section__info-content-stt-left">
+                            <ul>
+                                <li>01/<span>現場丈量</span><span>場勘丈量，暸解需求習慣及喜好</span> </li>
+                                <li>02/<span>平面規劃：</span><span>初步平面配置，討論合適方案</span></li>
+                                <li>03/<span>設計合約：</span><span>確認平配圖及預算，簽定合約</span></li>
+                                <li>04/<span>平面工程圖：</span><span>天花板、水電迴路等施工圖確認</span></li>
+                                <li>05/<span>立面工程圖：</span><span>立面造型、材質色彩計畫提案確認</span></li>
+
+                            </ul>
+                        </div>
+                        <div class="section__info-content-stt-right">
+                            <ul>
+                                <li>06/<span>工程估價：</span><span>平配圖微調/按設計擬定工程預算</span></li>
+                                <li>07/<span>工程合約：</span><span>確認施工項目內容，簽訂工程合約</span></li>
+                                <li>08/<span>細節確認：</span><span>工期排程確認，安排工班進場</span></li>
+                                <li>09/<span>工程管理：</span><span>現場專案監工，回報協調即時狀況</span></li>
+                                <li>
+                                    <div>
+                                        10/<span>完工交屋：</span><span>驗收交屋，提供一年期保固</span>
+                                    </div>
+                                    <div>（人為破壞則修繕費用另計）</div>
+                                </li>
+
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+                <br>
+                <div class="button-about">
+                    <a href="#">預約洽詢</a>
+                </div>
+
+
+            </div>
+
+        </section>
+        <footer>
+            <nav>
+                <div class="nav__box">
+                    <div class="nav__footer">
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">facebook</a></li>
+                            <li><a href="#">Instagram</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="nav__title">
+                        <p>© NestSpace Design 2021</p>
+                    </div>
+                </div>
+
+
+            </nav>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/stylesSign.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Signup</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="box-form">
+                        <form id="form-signup">
+                            <div class="alert alert__err-pass" style="display:none ;">
+                                <span class="closebtn">&times;</span>
+                                Nhập lại mật khẩu không chính xác
+                            </div>
+                            <div class="alert alert__empty" style="display:none ;">
+                                <span class="closebtn">&times;</span>
+                                Vui lòng nhập tất cả các trường
+                            </div>
+                            <div class="box-form-title">
+                                <div class="box-form-title-icon"><i class="fa-solid fa-user"></i></div>
+                                <div class="box-form-title-content">
+                                    <h2>Create an Acount</h2>
+                                </div>
+                            </div>
+                            <div class="signup__form">
+                                <div class="signup__form-user">
+                                    <input  class="input-form" type="email" id="email_sign" autocomplete="off" placeholder="Email"
+                                        name="email">
+                                    <div class="signup__form-icon"> <i class="fa-solid fa-envelope"></i></i></div>
+                                </div>
+
+                                <div class="signup__form-pass">
+                                    <input  class="input-form" type="text" id="user_sign" autocomplete="off" placeholder="Username"
+                                        name="user">
+                                    <div class="signup__form-icon"><i class="fa-solid fa-user"></i></div>
+                                </div>
+                                <div class="signup__form-pass">
+                                    <input  class="input-form" type="password" id="password_sign" autocomplete="off" placeholder="Password">
+                                    <div class="signup__form-icon"><i class="fa-solid fa-key"></i></div>
+                                </div>
+                                <div class="signup__form-pass">
+                                    <input  class="input-form" type="password" id="confirm_pass" autocomplete="off"
+                                        placeholder="Confirm Password">
+                                    <div class="signup__form-icon"><i class="fa-solid fa-rotate"></i></div>
+                                </div>
+
+                                <div class="button__check">
+                                    <input  class="input-form" type="checkbox" />
+                                    <p>I have read and agree to <span>terms</span></p>
+                                </div>
+                            </div>
+                            <input class="form-submit" id="signup-btn" type="submit" value="Sign In">
+                        </form>
+
+                        <div class="signup-now">
+                            <p>Aready a member? <span><a href="./login.html">Login here</a></span></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="../js/signup.js"></script>
+
+</body>
+
+</html>

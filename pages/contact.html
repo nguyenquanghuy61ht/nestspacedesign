@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://images.squarespace-cdn.com/content/v1/6014f6d17afdae55ced84a12/1612070516488-6EEOZLPWLFY3703BAA3O/favicon.ico?format=100w" />
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+
+    <title>Contact &mdash; NestSpace 巢空間室內設計</title>
+    <script>
+        let isShow = false
+        function myFunction(x) {
+
+            x.classList.toggle("change");
+
+            if (isShow == false) {
+                isShow = true
+                document.querySelector(".Wrapper-mobile").style.display = "block"
+                document.querySelector(".Wrapper-mobile").style.opacity = 1
+
+                document.querySelector("header").style.border = "none"
+                document.querySelector("*").style.overflow = "hidden";
+                document.querySelector(".bar1").style.backgroundColor = "white"
+                document.querySelector(".bar3").style.backgroundColor = "white"
+
+
+            } else {
+                isShow = false
+                document.querySelector(".Wrapper-mobile").style.display = "none"
+                document.querySelector(".Wrapper-mobile").style.opacity = 0
+
+                document.querySelector("header").style.borderBottom = "1px solid #000";
+                document.querySelector("*").style.overflow = "scroll";
+                document.querySelector(".bar1").style.backgroundColor = "#333"
+                document.querySelector(".bar3").style.backgroundColor = "#333"
+            }
+        }
+
+
+        window.addEventListener("scroll", () => {
+
+            if (scrollY >= 100) {
+
+
+                document.querySelector(".header__contact").style.height = "90px"
+
+            }
+            else {
+
+                document.querySelector(".header__contact").style.height = "100px"
+
+            }
+        })
+
+       
+
+    </script>
+</head>
+
+<body>
+    <div class="Wrapper">
+        <div class="Wrapper-mobile">
+            <div class="Wrapper-mobile-header">
+
+            </div>
+            <div class="wrapper-box-menu">
+                <div class="Wrapper-mobile-menu">
+                    <ul>
+                        <li><a href="../pages/about.html">About</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./portfolio.html">Portfolio</a></li>
+                        <li><a href="./impression.html">Impression</a></li>
+                    </ul>
+                </div>
+                <div class="Wrapper-mobile-footer">
+                    <div class="Wrapper-mobile-footer-social">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <header class="header__contact">
+            <div class="header">
+                <div class="header__navleft">
+                    <nav>
+                        <ul>
+                            <li>
+                                <div class="container" onclick="myFunction(this)">
+                                    <div class="bar1 bar"></div>
+                                    <div class="bar2 bar"></div>
+                                    <div class="bar3 bar"></div>
+                                </div>
+                            </li>
+                            <li><a href="../pages/about.html">About</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="./portfolio.html">Portfolio</a></li>
+                            <li><a href="./impression.html">Impression</a></li>
+
+                        </ul>
+                    </nav>
+                    <div class="header__navleft-logo" >
+
+                        <a href="./index.html"><img src="../img/nestspace+logo+bk.png" alt="logo" /></a>
+
+                    </div>
+                </div>
+                <div class="header__navright">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+
+
+                    </ul>
+                </div>
+
+
+
+            </div>
+        </header>
+        <section class="content__contact">
+            <div class="content__contact-container">
+                <div class="content__contact-container-block">
+                    <div class="content__contact-container-image">
+                        <div class="content__contact-container-img ">
+                            <img src="../img/Nestspace-contactimg-03.jpg" alt="img">
+                        </div>
+                        <div class="content__contact-container-ditail ">
+                            <div class="content__contact-container-ditail1 ">
+                                <h2>Contact Us</h2>
+                                <h4>If you have design/ renovation queries, please fill in the form below, and we will
+                                    reach
+                                    you once received,</h4>
+                                <h3>如果您有設計/裝修相關服務需求
+                                    請填寫以下表單，我們收到將盡快回覆</h3>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="space-top"></div>
+                    <div class="content__contact-container-info">
+                        <div class="content__contact-container-adrress infomation1">
+                            <div class="content__contact-daitail-adress">
+                                <div class="content__contact-daitail-adressifo">
+                                    <strong>Add.</strong>
+                                    <br>
+                                    No.8, Wanning St., Wenshan Dist.,
+                                    <br>
+                                    Taipei City, Taiwan #116
+                                </div>
+                                <div class="content__contact-daitail-adressifo">
+                                    <strong>Hours</strong>
+                                    <br>
+                                    Monday–Friday
+                                    <br>
+                                    9am–6pm
+                                </div>
+                                <div class="content__contact-daitail-adressifo">
+                                    <strong>Reach Us</strong>
+                                    <br>
+                                    +886-(2)-8230-0045
+                                    <br>
+                                    +886-970-719-427
+                                    <br>
+                                    nestdesignmail@gmail.com
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content__contact-container-person infomation2">
+                            <form method="post" id="content__contact-container-person-input">
+                                <div class="box-input">
+                                    <strong>Contact Name *</strong>
+                                    <p>姓名</p>
+                                    <div class="group-input1">
+                                        <div>
+                                            <input name="firstname" />
+                                            <label>First Name</label>
+                                        </div>
+                                        <div>
+                                            <input name="lastname" />
+                                            <label> Last Name</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="box-input">
+                                    <strong>Phone *</strong>
+                                    <p>聯絡電話（手機）</p>
+                                    <div class=" group-input2 ">
+                                        <input name="firstname" />
+                                    </div>
+                                </div>
+                                <div class="box-input">
+                                    <strong>Line *</strong>
+                                    <p>Line 帳號 ID</p>
+                                    <div class=" group-input2 ">
+                                        <input name="firstname" />
+
+                                    </div>
+                                </div>
+                                <div class="box-input">
+                                    <strong>Email *</strong>
+                                    <div class=" group-input2 ">
+                                        <input name="firstname" />
+
+                                    </div>
+                                </div>
+                                <div class="box-input">
+                                    <strong>Location *</strong>
+                                    <p>房屋位置</p>
+                                    <div class=" group-input2 ">
+                                        <input name="firstname" placeholder="縣市 / 區域" />
+                                    </div>
+                                </div>
+                                <div class="box-input">
+                                    <strong>Condition *</strong>
+                                    <p>房屋狀況</p>
+                                    <div class=" group-checkbox ">
+                                        <input type="checkbox" id="vehicle1" name="vehicle1" value=" 中古屋/老屋">
+                                        <label for="vehicle1"> 中古屋/老屋</label><br>
+                                        <input type="checkbox" id="vehicle2" name="vehicle2" value="新成屋">
+                                        <label for="vehicle2"> 新成屋</label><br>
+                                        <input type="checkbox" id="vehicle3" name="vehicle3" value="預售屋">
+                                        <label for="vehicle3"> 預售屋</label><br><br>
+                                    </div>
+                                </div>
+                                <div class="box-option">
+                                    <strong>Categories *</strong>
+                                    <p>房屋類型</p>
+                                    <div class=" group-option ">
+                                        <select id="Categories" name="Categories">
+                                            <option value="房屋類型">房屋類型</option>
+                                            <option value="社區大樓">社區大樓</option>
+                                            <option value="公寓（無電梯）">公寓（無電梯）</option>
+                                            <option value="獨棟空間">獨棟空間</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="box-input">
+                                    <strong>Year *</strong>
+                                    <p>房屋屋齡</p>
+                                    <div class=" group-input2 ">
+                                        <input name="firstname" />
+                                    </div>
+                                </div>
+                                <div class="box-input">
+                                    <strong>Size *</strong>
+                                    <p>房屋坪數</p>
+                                    <div class=" group-input2 ">
+                                        <input name="firstname" />
+                                    </div>
+                                </div>
+                                <div class="box-input">
+                                    <strong>Budget *</strong>
+                                    <p>裝修預算金額</p>
+                                    <div class=" group-checkbox-price ">
+                                        <input type="checkbox" id="price1" name="price1" value="200 - 250萬">
+                                        <label for="price1"> 200 - 250萬</label><br>
+                                        <input type="checkbox" id="price2" name="price2" value="250 - 300萬">
+                                        <label for="price2"> 250 - 300萬</label><br>
+                                        <input type="checkbox" id="price3" name="price3" value="300 - 400萬">
+                                        <label for="price3"> 300 - 400萬</label><br>
+                                        <input type="checkbox" id="price4" name="price4" value="400 - 500萬">
+                                        <label for="price4"> 400 - 500萬</label><br>
+                                        <input type="checkbox" id="price5" name="price5" value="500 - 600萬">
+                                        <label for="price5"> 500 - 600萬</label><br>
+                                        <input type="checkbox" id="price6" name="price6" value="600 - 800萬">
+                                        <label for="price6"> 600 - 800萬</label><br>
+                                        <input type="checkbox" id="price7" name="price7" value="800 - 1000萬">
+                                        <label for="price7"> 800 - 1000萬</label><br>
+                                        <input type="checkbox" id="price7" name="price7" value="1000萬">
+                                        <label for="price7">1000萬</label><br><br>
+                                    </div>
+                                </div>
+                                <div class="box-option-date">
+                                    <strong>Expected Date *</strong>
+                                    <p>預計裝修日期</p>
+                                    <div class=" group__expected-date ">
+                                        <div class="month">
+                                            <input id="month" type="text"><br>
+                                            <label for="month">MM</label>
+                                        </div>
+                                        <div class="day">
+                                            <input id="day" type="text"><br>
+                                            <label for="day">DD</label>
+                                        </div>
+                                        <div class="year">
+                                            <input id="year" type="text"><br>
+                                            <label for="year">YYYY</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="box-input">
+                                    <strong>How do you know us *</strong>
+                                    <p>從哪裡認識巢空間設計</p>
+                                    <div class=" group-checkbox-question ">
+                                        <input type="checkbox" id="question1" name="question1" value=" 朋友介紹">
+                                        <label for="question1"> 朋友介紹</label><br>
+                                        <input type="checkbox" id="question2" name="question2" value="網路搜尋">
+                                        <label for="question2"> 網路搜尋</label><br>
+                                        <input type="checkbox" id="question3" name="question3" value="國內平台：100室內設計">
+                                        <label for="question3"> 國內平台：100室內設計</label><br>
+                                        <input type="checkbox" id="question4" name="question4" value=" 國內平台：設計家/ 漂亮家居">
+                                        <label for="question4"> 國內平台：設計家/ 漂亮家居</label><br>
+                                        <input type="checkbox" id="question5" name="question5" value="國內平台：Decomyplace">
+                                        <label for="question5"> 國內平台：Decomyplace</label><br>
+                                        <input type="checkbox" id="question6" name="question6" value="國內平台：mobile01">
+                                        <label for="question6"> 國內平台：mobile01</label><br>
+                                        <input type="checkbox" id="question7" name="question7" value=" 國外平台/雜誌看過我們作品">
+                                        <label for="question7"> 國外平台/雜誌看過我們作品</label><br>
+                                        <input type="checkbox" id="question7" name="question7" value=" 其他">
+                                        <label for="question7"> 其他</label><br><br>
+                                    </div>
+                                </div>
+                                <input type="submit" class="submit_form" value="Done">
+
+                            </form>
+                        </div>
+                    </div>
+                    <div class="space-top space-top2 "></div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <nav>
+                <div class="nav__box">
+                    <div class="nav__footer">
+                        <ul>
+                            <li><a href="./about.html">About</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="./portfolio.html">Portfolio</a></li>
+                            <li><a href="./portfolio.html">facebook</a></li>
+                            <li><a href="#">Instagram</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="nav__title">
+                        <p>© NestSpace Design 2021</p>
+                    </div>
+                </div>
+
+
+            </nav>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>

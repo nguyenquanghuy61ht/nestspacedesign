@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://images.squarespace-cdn.com/content/v1/6014f6d17afdae55ced84a12/1612070516488-6EEOZLPWLFY3703BAA3O/favicon.ico?format=100w" />
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/impression.css" />
+
+    <title>Impression &mdash; NestSpace 巢空間室內設計</title>
+    <script>
+        let isShow = false
+        function myFunction(x) {
+
+            x.classList.toggle("change");
+
+            if (isShow == false) {
+                isShow = true
+                document.querySelector(".Wrapper-mobile").style.display = "block"
+                document.querySelector(".Wrapper-mobile").style.opacity = 1
+
+                document.querySelector("header").style.border = "none"
+                document.querySelector("*").style.overflow = "hidden";
+                document.querySelector(".bar1").style.backgroundColor = "white"
+                document.querySelector(".bar3").style.backgroundColor = "white"
+
+
+            } else {
+                isShow = false
+                document.querySelector(".Wrapper-mobile").style.display = "none"
+                document.querySelector(".Wrapper-mobile").style.opacity = 0
+
+                document.querySelector("header").style.borderBottom = "1px solid #000";
+                document.querySelector("*").style.overflow = "scroll";
+                document.querySelector(".bar1").style.backgroundColor = "#333"
+                document.querySelector(".bar3").style.backgroundColor = "#333"
+            }
+        }
+
+
+        window.addEventListener("scroll", () => {
+
+            if (scrollY >= 100) {
+
+
+                document.querySelector(".header__impression").style.height = "90px"
+
+            }
+            else {
+
+                document.querySelector(".header__impression").style.height = "100px"
+
+            }
+        })
+      
+
+
+    </script>
+</head>
+
+<body>
+    <div class="Wrapper">
+        <div class="Wrapper-mobile">
+            <div class="Wrapper-mobile-header">
+
+            </div>
+            <div class="wrapper-box-menu">
+                <div class="Wrapper-mobile-menu">
+                    <ul>
+                        <li><a href="../pages/about.html">About</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./portfolio.html">Portfolio</a></li>
+                        <li><a href="./impression.html">Impression</a></li>
+                    </ul>
+                </div>
+                <div class="Wrapper-mobile-footer">
+                    <div class="Wrapper-mobile-footer-social">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <header class="header__impression">
+            <div class="header">
+                <div class="header__navleft">
+                    <nav>
+                        <ul>
+                            <li>
+                                <div class="container" onclick="myFunction(this)">
+                                    <div class="bar1 bar"></div>
+                                    <div class="bar2 bar"></div>
+                                    <div class="bar3 bar"></div>
+                                </div>
+                            </li>
+                            <li><a href="../pages/about.html">About</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="./portfolio.html">Portfolio</a></li>
+                            <li><a href="./impression.html">Impression</a></li>
+
+                        </ul>
+                    </nav>
+                    <div class="header__navleft-logo" >
+
+                        <a href="./index.html" ><img src="../img/nestspace+logo+bk.png" alt="logo" /></a>
+
+                    </div>
+                </div>
+                <div class="header__navright">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+
+                    </ul>
+                </div>
+
+
+
+            </div>
+        </header>
+        <section class="content__impression">
+            <div class="content__impression-container">
+                <a href="#" class="grid-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/6014f6d17afdae55ced84a12/1643366207569-ONICUC6HVRZY1C0SWEWM/NestSpaceDesign-3DImpression-Apartment-CP-cover-1.jpg"
+                        alt="img">
+                    <div class="middle">
+                        <div class="text">Apartment CP</div>
+                    </div>
+
+                </a>
+                <a href="#" class="grid-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/6014f6d17afdae55ced84a12/1643364647566-84GSCJVJR317E0S2P736/NestSpaceDesign-3DImpression-Residence-C-cover.jpg"
+                        alt="img">
+                    <div class="middle">
+                        <div class="text">Residence C</div>
+                    </div>
+
+                </a>
+                <a href="#" class="grid-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/6014f6d17afdae55ced84a12/1643363749332-MNV6KKW022EKCJAFZG0I/NestSpaceDesign-3DImpression-Apartment-H-cover-1.jpg"
+                        alt="img">
+                    <div class="middle">
+                        <div class="text">Apartment H</div>
+                    </div>
+
+                </a>
+                <a href="#" class="grid-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/6014f6d17afdae55ced84a12/1643362784279-JBLKA2GOXMCBI5II13ND/NestSpaceDesign-3DImpression-K-House-cover.jpg"
+                        alt="img">
+                    <div class="middle">
+                        <div class="text">K House</div>
+                    </div>
+
+                </a>
+                <a href="#" class="grid-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/6014f6d17afdae55ced84a12/1643367738608-2L2M5ZSNGVCHZ8573YQ3/NestSpaceDesign-3DImpression-Residence-W-cover-1.jpg"
+                        alt="img">
+                    <div class="middle">
+                        <div class="text">Residence W</div>
+                    </div>
+
+                </a>
+
+
+
+            </div>
+        </section>
+        <footer>
+            <nav>
+                <div class="nav__box">
+                    <div class="nav__footer">
+                        <ul>
+                            <li><a href="./about.html">About</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="./portfolio.html">Portfolio</a></li>
+                            <li><a href="./portfolio.html">facebook</a></li>
+                            <li><a href="#">Instagram</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="nav__title">
+                        <p>© NestSpace Design 2021</p>
+                    </div>
+                </div>
+
+
+            </nav>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

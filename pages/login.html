@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/stylesLogin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="box-form">
+                        <form id="form-login" >
+                            <div class="alert alert__err-user-pass" style="display:none ;">
+                                <span class="closebtn">&times;</span>
+                                Tên đăng nhập hoặc mật khẩu không đúng
+                            </div>
+                            <div class="alert alert__empty" style="display:none ;">
+                                <span class="closebtn">&times;</span>
+                                Vui lòng nhập tất cả các trường
+                            </div>
+                            <div class="box-form-title">
+                                <div class="box-form-title-icon"><i class="fa-solid fa-mug-saucer"></i></div>
+                                <div class="box-form-title-content">
+                                    <h2>Wellcome Back</h2>
+                                </div>
+                            </div>
+                            <div class="login__form">
+                                <div class="login__form-user">
+                                    <input type="text" id="user" class="input-form" autocomplete="off"
+                                        placeholder="Username" name="user">
+                                    <div class="login__form-icon"> <i class="fa-solid fa-user"></i></div>
+                                </div>
+
+                                <div class="login__form-pass">
+                                    <input type="password" id="password" class="input-form" autocomplete="off"
+                                        placeholder="Password" name="password">
+                                    <div class="login__form-icon"><i class="fa-solid fa-key"></i></div>
+                                </div>
+                                <div class="forget-pass">
+                                    <p> Frogot Password?</p>
+                                </div>
+                                <div class="button__check">
+                                    <input type="checkbox" />
+                                    <p>Remember me</p>
+                                </div>
+                            </div>
+
+                            <button class="form-submit" id="btn-login" type="submit">Submit</button>
+                        </form>
+
+                        <div class="signup-now">
+                            <p>Not a member? <span><a href="./signup.html">Signup now</a></span></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="../js/login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://images.squarespace-cdn.com/content/v1/6014f6d17afdae55ced84a12/1612070516488-6EEOZLPWLFY3703BAA3O/favicon.ico?format=100w" />
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/portfolio.css" />
+
+    <title>Protfolio &mdash; NestSpace 巢空間室內設計</title>
+    <script>
+        let isShow = false
+        function myFunction(x) {
+
+            x.classList.toggle("change");
+
+            if (isShow == false) {
+                isShow = true
+                document.querySelector(".Wrapper-mobile").style.display = "block"
+                document.querySelector(".Wrapper-mobile").style.opacity = 1
+
+                document.querySelector("header").style.border = "none"
+                document.querySelector("*").style.overflow = "hidden";
+                document.querySelector(".bar1").style.backgroundColor = "white"
+                document.querySelector(".bar3").style.backgroundColor = "white"
+
+
+            } else {
+                isShow = false
+                document.querySelector(".Wrapper-mobile").style.display = "none"
+                document.querySelector(".Wrapper-mobile").style.opacity = 0
+
+                document.querySelector("header").style.borderBottom = "1px solid #000";
+                document.querySelector("*").style.overflow = "scroll";
+                document.querySelector(".bar1").style.backgroundColor = "#333"
+                document.querySelector(".bar3").style.backgroundColor = "#333"
+            }
+        }
+
+
+        window.addEventListener("scroll", () => {
+
+            if (scrollY >= 100) {
+
+
+                document.querySelector(".header__portfolio").style.height = "90px"
+
+            }
+            else {
+
+                document.querySelector(".header__portfolio").style.height = "100px"
+
+            }
+        })
+     
+    </script>
+</head>
+
+<body>
+    <div class="Wrapper">
+        <div class="Wrapper-mobile">
+            <div class="Wrapper-mobile-header">
+
+            </div>
+            <div class="wrapper-box-menu">
+                <div class="Wrapper-mobile-menu">
+                    <ul>
+                        <li><a href="../pages/about.html">About</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./portfolio.html">Portfolio</a></li>
+                        <li><a href="./impression.html">Impression</a></li>
+                    </ul>
+                </div>
+                <div class="Wrapper-mobile-footer">
+                    <div class="Wrapper-mobile-footer-social">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <header class="header__portfolio">
+            <div class="header">
+                <div class="header__navleft">
+                    <nav>
+                        <ul>
+                            <li>
+                                <div class="container" onclick="myFunction(this)">
+                                    <div class="bar1 bar"></div>
+                                    <div class="bar2 bar"></div>
+                                    <div class="bar3 bar"></div>
+                                </div>
+                            </li>
+                            <li><a href="../pages/about.html">About</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="./portfolio.html">Portfolio</a></li>
+                            <li><a href="./impression.html">Impression</a></li>
+
+                        </ul>
+                    </nav>
+                    <div class="header__navleft-logo" >
+
+                        <a href="./index.html"><img src="../img/nestspace+logo+bk.png" alt="logo" /></a>
+
+                    </div>
+                </div>
+                <div class="header__navright">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+
+
+
+                    </ul>
+                </div>
+
+
+
+            </div>
+        </header>
+        <section class="content__portfolio">
+            <div class="content__portfolio-container">
+                <a href="#" class="grid-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/6014f6d17afdae55ced84a12/1657675930075-TWFVWUJ6RAB4VFSM9PKP/23-Nestspace-Portfolio-coverS-Revival-House-01.jpg?format=1000w"
+                        alt="img">
+                    <div class="portfolio-text">
+                        <p>Revival House: Echo of the Body</p>
+                    </div>
+                </a>
+                <a href="#" class="grid-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/6014f6d17afdae55ced84a12/1657676041040-ACH2A8HEGQTHA4FFFNP4/23-Nestspace-Portfolio-coverS-freeform-02.jpg?format=1000w"
+                        alt="img">
+                    <div class="portfolio-text">
+                        <p>Free Form</p>
+                    </div>
+                </a>
+                <a href="#" class="grid-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/6014f6d17afdae55ced84a12/1650122723184-SY59Z69JCR3A00TYBJYQ/22-Nestspace-Portfolio-coverS-cache-02.jpg?format=1000w"
+                        alt="img">
+                    <div class="portfolio-text">
+                        <p>Cache'</p>
+                    </div>
+                </a>
+                <a href="#" class="grid-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/6014f6d17afdae55ced84a12/1634467572547-38OMSK6TE0NUGEIHQT79/21-Nestspace-Portfolio-coverS-antipode-02.jpg?format=1000w"
+                        alt="img">
+                    <div class="portfolio-text">
+                        <p>Antipode</p>
+                    </div>
+                </a>
+                <a href="#" class="grid-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/6014f6d17afdae55ced84a12/1627195746831-KTI57ZCUD2QGK7KI9U71/20-Nestspace-Portfolio-coverS-Bon-Appetit-01.jpg?format=1000w"
+                        alt="img">
+                    <div class="portfolio-text">
+                        <p>Bon Appetit</p>
+                    </div>
+                </a>
+                <a href="#" class="grid-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/6014f6d17afdae55ced84a12/1620871719065-YEDQJELYMT8G4BC3ULGS/18-Nestspace-Portfolio-coverS-Jardin%2Bdel%2BSol-01.jpg?format=1000w"
+                        alt="img">
+                    <div class="portfolio-text">
+                        <p>Jardin del Sol</p>
+                    </div>
+                </a>
+                <a href="#" class="grid-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/6014f6d17afdae55ced84a12/1614432907335-KO8RD7M7LWPQHIGF8TU0/17-Nestspace-Portfolio-coverS-panorama-03.jpg?format=1000w"
+                        alt="img">
+                    <div class="portfolio-text">
+                        <p>Panorama</p>
+                    </div>
+                </a>
+                <a href="#" class="grid-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/6014f6d17afdae55ced84a12/1612712661144-8E90VTO0NQ6QN79F61LM/16-Nestspace-Portfolio-coverS-ailove-02.jpg?format=1000w"
+                        alt="img">
+                    <div class="portfolio-text">
+                        <p>Ai Love</p>
+                    </div>
+                </a>
+                <a href="#" class="grid-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/6014f6d17afdae55ced84a12/1612709531273-DJ5C54XF2RM8K1HHFYTT/15-Nestspace-Portfolio-coverS-miaomiao-01.jpg?format=1000w"
+                        alt="img">
+                    <div class="portfolio-text">
+                        <p>miao miao</p>
+                    </div>
+                </a>
+                <a href="#" class="grid-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/6014f6d17afdae55ced84a12/1612706733767-SDGPGXKL0TLTS7UB2K2O/14-Nestspace-Portfolio-coverS-whitopia-01.jpg?format=1000w"
+                        alt="">
+                    <div class="portfolio-text">
+                        <p>Whitopia</p>
+                    </div>
+                </a>
+                <a href="#" class="grid-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/6014f6d17afdae55ced84a12/1612695148202-KJZJRW0AMXHZ2C4TPYZH/13-Nestspace-Portfolio-coverS-neon-01.jpg?format=1000w"
+                        alt="img">
+                    <div class="portfolio-text">
+                        <p>Ne_On</p>
+                    </div>
+                </a>
+                <a href="#" class="grid-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/6014f6d17afdae55ced84a12/1612691392985-OPZUITN9YIPSU5CKL3P2/12-Nestspace-Portfolio-coverS-xross-01.jpg?format=1000w"
+                        alt="img">
+                    <div class="portfolio-text">
+                        <p>Minty Sky</p>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+        <footer>
+            <nav>
+                <div class="nav__box">
+                    <div class="nav__footer">
+                        <ul>
+                            <li><a href="./about.html">About</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="./portfolio.html">Portfolio</a></li>
+                            <li><a href="./portfolio.html">facebook</a></li>
+                            <li><a href="#">Instagram</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="nav__title">
+                        <p>© NestSpace Design 2021</p>
+                    </div>
+                </div>
+
+
+            </nav>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+ 
+
+</body>
+
+</html>

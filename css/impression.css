@@ -1,0 +1,72 @@
+.header__impression {
+  background-color: #a8a6a1;
+}
+.content__impression {
+  margin-top: 100px;
+  width: 100%;
+  background-color: #a8a6a1;
+}
+.content__impression-container {
+  width: 100%;
+  padding-top: 6.6vw;
+  padding-bottom: 6.6vw;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-column-gap: 30px;
+  grid-row-gap: 40px;
+  grid-auto-rows: min-content;
+}
+
+.grid-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.grid-item img {
+  object-fit: cover;
+}
+.grid-item img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.3s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.3s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.grid-item:hover img {
+  opacity: 0.2;
+}
+
+.grid-item:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: orpheus-pro;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 740px) {
+  .content__impression-container {
+    grid-template-columns: 100%;
+  }
+}
